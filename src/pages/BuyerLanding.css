@@ -1,0 +1,151 @@
+.buyer-landing {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffdf7;
+  color: #3e2723;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #a0522d;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.cart-btn, .logout-btn {
+  background: #ffd700;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-btn:hover, .logout-btn:hover {
+  background: #ffb300;
+}
+
+/* Hero */
+.buyer-hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.buyer-overlay {
+  background: rgba(255, 250, 230, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Categories */
+.categories {
+  padding: 40px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.category-card {
+  background: #f3e5d0;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  background: #ffd180;
+}
+
+/* Featured Products */
+.featured {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: #fff8f0;
+  border: 1px solid #e0c097;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card button {
+  background: #a0522d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #7b3f1d;
+}
+
+/* Footer */
+.buyer-footer {
+  text-align: center;
+  padding: 20px;
+  background: #a0522d;
+  color: white;
+}
