@@ -7,6 +7,10 @@ import logo from "./assets/logo.png";
 // Separate Landing Pages
 import BuyerLanding from "./pages/BuyerLanding";
 import SellerLanding from "./pages/SellerLanding";
+import Cart from "./pages/Cart";
+
+// Context
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   const [showBuyerModal, setShowBuyerModal] = useState(false);
@@ -226,11 +230,14 @@ function App() {
 export default function Main() {
   return (
     <Router>
-      <Routes>
-        <Route path="/*" element={<App />} />
-        <Route path="/buyer" element={<BuyerLanding />} />
-        <Route path="/seller" element={<SellerLanding />} />
-      </Routes>
+      <CartProvider>
+        <Routes>
+          <Route path="/*" element={<App />} />
+          <Route path="/buyer" element={<BuyerLanding />} />
+          <Route path="/seller" element={<SellerLanding />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </CartProvider>
     </Router>
   );
 }
